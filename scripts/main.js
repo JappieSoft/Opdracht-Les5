@@ -71,4 +71,56 @@ const departments = {
     }
 }
 
-console.log(departments);
+
+ /*console.log(departments);*/
+/*  -----------------------  Original data END -----------------  */
+
+
+/*  -----------------------  Opdracht 1  -----------------------  */
+
+
+
+/*
+console.log("Opdracht 1a")
+console.log("De afdeling Sales heeft " + departments.sales.numberOfEmployees + " medewerkers.")
+
+console.log("Opdracht 1b")
+console.log("Marketing is een leuke afdeling om te werken. " + departments.marketing.description + ".")
+
+console.log("Opdracht 1c")
+console.log("De afdeling Customer Service heeft " + departments["customer-service"].numberOfEmployees + " medewerkers.")
+
+console.log("Opdracht 1d")
+console.log("Sales is een uitdagende afdeling om te werken als Verkoopmanager. " + departments.sales.jobs[1].description)
+*/
+
+/* -----------------------  Opdracht 1  END  ------------------  */
+
+
+/*  -----------------------  Opdracht 2  -----------------------  */
+/*  -----------------------  Opdracht 2A  ----------------------  */
+
+const userInput = prompt("Over welke afdeling wil je meer informatie?\nKies uit: [marketing / sales / customer-service]");
+
+/*  -----------------------  Opdracht 2B & C -------------------  */
+
+let userInputSwitchResult = "niet ok!"
+
+switch (userInput) {
+    case 'marketing':
+        userInputSwitchResult = departments.marketing.description;
+        console.log("Je koos " + userInput +". " + userInputSwitchResult );
+        break;
+    case 'sales':
+        userInputSwitchResult = departments.sales.description;
+        console.log("Je koos " + userInput +". " + userInputSwitchResult );
+        break;
+    case 'customer-service':
+        userInputSwitchResult = departments["customer-service"].description;
+        console.log("Je koos " + userInput +". " + userInputSwitchResult );
+        break;
+    default:
+        console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");
+}
+
+/*  -----------------------  Opdracht 3  -----------------------  */
